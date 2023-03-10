@@ -1,0 +1,462 @@
+/*CSS Reset*/
+body, header, nav, main, footer, h1, div, img, ul, section{
+	margin:	0;
+	padding:	0;
+	border:	0;
+}
+body{
+	background-color: #492646;
+}
+body *{
+	font-family: 'Nunito', sans-serif;
+}
+}
+*{
+	box-sizing: border-box;
+}
+img{
+	max-width: 100%;
+	display: block;
+}
+/*Style rules for MOBILE VIEWPORT, DEFAULT*/
+
+/*styles rules for mobile header*/
+header{
+	top: 0;
+	background-color: #fff;
+	height: 100px;
+	width: 100%;
+}
+header img{
+	margin: 0;
+}
+/* Styles rules for hamburger menu*/
+.mobile-nav{
+	background-color: #fff;
+}
+.mobile-nav a{
+	color: #492646;
+	font-family: 'Nunito', sans-serif;
+	text-align: center;
+	font-size: 2em;
+	text-decoration: none;
+	padding: 3%;
+	display: block;
+}
+.mobile-nav a.menu-icon{
+	display: block;
+	position: absolute;
+	left: 1%;
+	top: 4.5%;
+}
+/*Show mobile class, hide tablet-desktop class and menu-links id*/
+.mobile{
+	display: block;
+}
+.tablet-desktop, #menu-links{
+	display: none;
+}
+main{
+	background-color: #fff;
+	padding: 2%;
+	font-size: 1.15em;
+	font-family: serif;
+}
+.mobile h3{ 
+	text-shadow: 5px 5px 8px #DDA0DD;
+}
+/*Mobile's index page styles*/
+.tel-link{
+	background-color: #FF6347;
+	padding: 4%;
+	margin: 0 auto;
+	width: 80%;
+	text-align: center;
+	border-radius: 5px;
+}
+.tel-link a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.5em;
+	display: block;
+}
+main h4{
+	color: #492646;
+	text-align: center;
+}
+.mobile h4{ /*Home page h4 should remain left-aligned, unlike in about-us page*/
+	text-align: left;
+}
+.hours{
+	margin-left: 10%;
+}
+
+
+/*about-us styles*/
+#services-header h1{
+	color: #696969;
+}
+.round{
+	border-radius: 8px;
+}
+#services-subHeader h2{
+	color: #000;
+}
+.imports-and-warehousing img, .road-and-sea img, .air-and-rail img{
+	margin: 0 auto;
+}
+#services-header,#imports,#warehousing,#road-freight,
+#sea-freight,#air-freight,#rail-freight,#customs{
+	margin: 0 2%;
+}
+#road-freight p,#sea-freight p,#air-freight p, #rail-freight p{
+	margin-bottom: 0;
+	font-weight: bold;
+}
+.services-offered, .services-offered2{
+	margin-top: 1%;
+	margin-left: 10%;	
+}
+/*other-services page*/
+.other-services h1{
+	color: #696969;
+	font-weight: normal;
+	text-align: center;
+}
+#bold-header{
+	font-weight: bolder;
+}
+.other-services img{
+	margin: 0 auto;
+}
+/*contact-us page*/
+#contact{
+	text-align: center;
+}
+#contact h4{
+	color: #000;
+}
+#contact h2{
+	color: #4169E1;
+}
+#contact .contact-email-link{
+	color: #696969;
+	text-decoration: none;
+}
+#contact h2{
+	color:#492646;
+}
+.map{
+	display: none;
+}
+/* Styles rules for the footer area */
+footer{
+	margin-top: 0;
+	background-color: #492646;
+}
+footer p{
+	font-size: 0.95em;
+	text-align: center;
+	color: #fff;
+	padding: 0 1em;
+}
+footer p a{
+	color: #fff;
+	text-decoration: none;
+}
+
+/*Tablet Viewport*/
+/*Media Query for Tablet Viewport*/
+@media screen and (min-width: 630px){
+	/*Ensure Tablet Viewport is on, and mobile style rules are off*/
+	.tablet-desktop{
+		display: block;
+	}
+	.mobile, .mobile-nav{
+		display: none;
+	}
+	/*Ensure the appropriate other.html content is shown*/
+	.other-services{
+		display: block;
+	}
+	.other-services2{
+		display: none;
+	}
+	/*Tablet Viewport: Style rule for header*/
+	header{
+		margin: 0;
+	}
+	header img{
+		margin-left: 20%;
+	}
+	nav{
+		padding: 1%;
+		margin-bottom: 0;
+		background-color: #fff;
+		margin-top: 0;
+		height: 100px;
+	}
+	nav ul{
+		list-style-type: none;
+		text-align: center;
+	}
+
+	nav li{
+		font-size: 1.5em;
+		font-family: 'Nunito', sans-serif;
+		display: inline-block;
+		border-right: 1px solid #492646;
+	}
+	nav li:last-child{
+		border-right: none;
+	}
+	nav li a{
+		padding: 0.1em 0.7em;
+		display: block;
+		color: #492646;
+		text-decoration: none;
+	}
+	main ul{
+		margin: 0 0 4% 10%;
+	}
+	main{
+		margin-bottom: 0;
+	}
+	/*index.html Style Rules*/
+	#opening-header p{
+		color: #FF7B7B;
+	}
+	#opening-header h1{
+		font-weight:	normal;
+		color: 	#492646;
+	}
+	#bold-header{
+		font-weight: bolder;
+	}
+	#body-content{
+		margin-top: 6%;
+	}
+	.company-profile{
+		margin: 3% auto;
+		border-radius: 20%;
+		padding: 1% 2%;
+	}
+	.tablet-desktop h3{
+		color: #492646;
+	}
+	#mission,#vision{
+		width:40%;
+		float: left;
+		margin: 0 2%;
+		text-align: center;
+	}
+	.company-principles{
+		clear: left;
+		margin: 3% auto;
+		border-radius: 20%;
+		padding: 1% 2%;
+	}
+	.company-principles img{
+		border-radius: 45%;
+		background-color: #492646;
+	}
+	.center{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#conduct,#endeavour{
+		width:40%;
+		float: left;
+		margin: 0 2%;
+		text-align: center;
+	}
+	.call-to-action{
+		clear: left;
+		margin-top: 20%;
+	}
+	.call-to-action p a{
+		color: #492646;
+		font-weight: bold;
+		text-decoration: none;
+	}
+
+	/*about.html Style Rules*/
+	.frame{
+		position: relative;
+		width: max-width;
+	}
+	.frame img{
+		opacity: 0.7;
+	}
+	.overlay-Title{ 
+		font-size: 2.5em;
+		font-weight: bold;
+		position: absolute;
+		bottom: 30%;
+		left: 5%;
+		color:	#492646;
+	}
+	#warehousing,#sea-freight, #rail-freight{
+		margin-left: 20%;
+		padding-left: 10%;
+	}
+	#imports, #warehousing{
+		width:40%;
+		float: left;	
+		margin: 0; 
+	}
+	/*unset box sizing for this row div elements. so they appear aligned*/
+	.imports-and-warehousing *{
+		box-sizing: unset;
+	}
+	.imports-and-warehousing{
+		margin: 3% auto;
+		padding: 1% 2%;
+	}
+	.road-and-sea *{
+		box-sizing: unset;		
+	}
+	.road-and-sea{
+		clear: left;
+		margin: 3% auto;
+		border-radius: 20%;
+		padding: 1% 2%;		
+	}
+	#road-freight, #sea-freight{
+		width:40%;
+		float: left;
+		margin: 0;
+	}
+	.air-and-rail *{
+		box-sizing: unset;		
+	}
+	.air-and-rail{
+		clear: left;
+		margin: 3% auto;
+		border-radius: 20%;
+		padding: 1% 2%;		
+	}
+	#air-freight, #rail-freight{
+		width:40%;
+		float: left;
+		margin: 0;	
+	}
+	.imports-and-warehousing h4,.road-and-sea h4,.air-and-rail h4{
+		text-align:	center;
+	}
+
+	.tel-num{
+		font-size:  1.25em;
+	}
+	.map{
+	display: block;
+	margin: 0 auto;
+	}
+}
+@media screen and (min-width: 1015px){
+	.other-services{
+		display: none;
+	}
+	.other-services2{
+		display: block;
+	}
+	.other-services2 h1{
+		color:	#696969;
+		margin-top: 3%;
+	}
+	#container{
+		background-color: #fff;
+	}
+	header{
+	background-color: #fff;
+	width: 25%;
+	float: left;
+	margin-bottom: 1%;
+	}
+	header img{
+		margin: 0;
+		padding: 0;
+	}
+	nav{
+	width: 70%;
+	float: right;
+	margin: 0;
+	padding-top: 2em;
+	}
+	nav ul{
+	text-align: center;
+	}
+	nav li{ /*override the ones for Tablet-Viewport*/
+		border: none;
+		font-size: 1.7em;
+	}
+	nav li a{ /*override the ones for Tablet-Viewport*/
+		padding: 0.5em 1em;
+	}
+	nav li a:hover{
+		color: #DA70D6; 
+		background-color: #E6E6FA;
+		transform: scale(1.1);
+	}
+	#hero{
+		margin: 0;
+	}
+	#hero img{
+		border-radius: 2%;
+	}
+	body{
+		font-size: 1em;
+	}
+	main{
+		clear: left;
+	}
+	main h1{
+		font-size: 1.8em;
+	}
+	#opening-header p{
+		font-size: 1.3em;
+	}
+	.frame{
+		background-color: transparent;
+		margin: 0;
+	}
+	.frame img:hover{
+		opacity: 0.5;
+		transition: opacity 0.5s ease-in-out;
+	}
+	#body-content{
+		margin-top: 2.5%;
+	}
+	.call-to-action{
+		margin-top: 13%;
+	}
+	/*about.html CSS Style rules*/
+	.overlay-Title{ 
+		font-size: 2.9em;
+	}
+	.imports-and-warehousing p{
+		padding-left: 20%;
+	} 
+	.road-and-sea p, .road-and-sea ul, .air-and-rail p, .air-and-rail ul{
+		padding-left: 20%;
+	}
+	/*other.html CSS rules*/
+	#customs{
+		margin: 1% 1% 1% 0%;
+	}
+	.services-offered2{
+	margin-top: 0;
+	margin-left: 5%;	
+	}
+	/*footer{
+		margin-top: 1%;
+	}*/
+}
+/*Media Query for Large Desktop Viewport*/
+@media screen and (min-width: 1921px){
+	#container{
+		width: 1920px;
+		margin: 0 auto;
+	}
+}
