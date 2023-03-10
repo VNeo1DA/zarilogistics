@@ -1,0 +1,2 @@
+# zarilogistics
+This is a static website named zarilogistics constructed using HTML and CSS only (using SublimeText IDE/Text Editor). It is a mobile first traditional multi-web page website that shares the company's service offerings. It accommodates (responsive) all viewports from mobile, tablet/laptop to large desktops. Websites was hardcoded and no frameworks were used for this mini project. It is essentially an informational static  website with no interactivity hence there was minimal JavaScript used.
